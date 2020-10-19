@@ -1,0 +1,12 @@
+body{
+    background-color: #ecf0f1;
+}
+header{
+    background-color: aliceblue;
+    padding:0;
+    display:flex;
+}
+.head-img{
+    height:120px;
+    width:400px;
+}
