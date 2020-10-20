@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Project Description:
+You provide the word, we provide its landscape to help you learn it. Word searches return its definition, images related to the word, and the pronunciation of the word.
+
+## Tech/framework used:
+HTML, CSS, JavaScript, React, fETCH API?
+
+## API Reference:
+dictionary & pixabay
+
+
 ## Available Scripts
 
 In the project directory, you can run:
