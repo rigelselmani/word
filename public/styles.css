@@ -1,14 +1,11 @@
 body{
     background-color: #ecf0f1;
+    margin:0;
 }
 header{
     background-color: aliceblue;
     padding:0;
     display:flex;
-}
-.head-img{
-    height:120px;
-    width:400px;
 }
 ul{
     display: flex;
@@ -59,8 +56,32 @@ h3{
    background-color: gainsboro;
    height:70px;
    width:100%;
-   padding:20px 10px;
+   /* padding:20px 0px; */
 }
-.container{
-    width:90%;
+.App{
+    width:80%;
+    margin:0 auto;
+}
+.pronounce{
+   padding:6% 0% 3% 0%;
+   height:200px;
+   width:100%;
+   background-color: white;
+}
+.imagedisplay{
+   padding:1% 0% 3% 0%;
+   height:210px;
+   width:100%;
+}
+.define{
+   padding:6% 0% 1% 0%;
+   background-color: white;
+   height:210px;
+   width:100%;
+}
+.p-define{
+    padding:5px;
+}
+.playbutton{
+  margin-top:10%;
 }

@@ -1,23 +1,26 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Header from "./Header"
-import Definition from "./Definition"
-import Search from "./Search"
+import Search from "./Search";
+import Definition from "./Definition";
+import Image from "./Image";
+import Pronunce from "./Pronounce";
 
-function App() {
-
-  const [text,setText]=useState();
+function App(){
+    const [text,setText]=useState();
     
   function handleWord(words){
      setText(words)
   }
 
-  return <div>
-             <Header />  
-             <Search onAdd={handleWord}/>
-             <div className="container">
-               <Definition addText={text}/>
-             </div>
-         </div>
+    return <div>
+                <Header />
+                    <Search onAdd={handleWord}/>
+                  <div className="App">
+                    <Definition addText={text}/>
+                    <Image addImg={text}/>
+                    <Pronunce addWord={text}/>
+                  </div>        
+            </div>
 }
 
 export default App;
