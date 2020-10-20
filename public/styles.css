@@ -54,9 +54,9 @@ h3{
 }
 .displayHead{
    background-color: gainsboro;
-   height:70px;
+   height:50px;
    width:100%;
-   /* padding:20px 0px; */
+   padding:20px 0px;
 }
 .App{
     width:80%;
@@ -70,7 +70,7 @@ h3{
 }
 .imagedisplay{
    padding:1% 0% 3% 0%;
-   height:210px;
+   height:240px;
    width:100%;
 }
 .define{
@@ -81,6 +81,7 @@ h3{
 }
 .p-define{
     padding:5px;
+    font-size: 1.2rem;
 }
 .playbutton{
   margin-top:10%;
