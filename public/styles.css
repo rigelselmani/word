@@ -87,3 +87,6 @@ h3{
 .playbutton{
   margin-top:10%;
 }
+audio:focus {
+    outline: 0;
+}

@@ -3,7 +3,8 @@ import React, { useState } from "react";
 function ImageDisplay(props){
   
     const [newImage,setNewImage]=useState();
-
+    if(props.addImage===undefined){
+    }else{
     fetch(props.addImage)
     .then(response=> response.json())
     .then(jsonResponse =>{
@@ -14,7 +15,7 @@ function ImageDisplay(props){
        setNewImage(jsonResponse.hits[0].largeImageURL)
       }
     })
-
+  }
     return <div className="definition">
               <h2 className="displayHead">Image • word</h2>
               <div className="img">

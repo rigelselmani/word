@@ -4,7 +4,8 @@ function Pronunce(props){
 
   const [writenP,setWritenP]=useState()
   const [pronounce,setPronounce]=useState()
-  
+  if(props.addPronounce===undefined){
+  }else{
   fetch(props.addPronounce)
   .then(response=> response.json())
   .then(jsonResponse =>{
@@ -46,15 +47,16 @@ function Pronunce(props){
     var url = "https://media.merriam-webster.com/soundc11/" + subDir + "/" + file + ".wav";
     setWritenP(writtenPron)
     setPronounce(url)
-  }
+   }
   })
-
+}
     return <div className="definition">
              <h2 className="displayHead">Sound • word</h2>
              <div className="pronounce">
                 <p>{writenP===undefined?"Search a word":writenP}</p>
                 <p>{writenP===undefined?"":"noun"}</p>
-                <audio className="playbutton" id="embed_player" src={pronounce} autostart="false" controls="true"></audio>
+                <audio controls autostart="false" className="playbutton"
+                   src={pronounce} type="audio/ogg"></audio>
              </div>
            </div>
 }
