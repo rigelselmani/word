@@ -9,7 +9,9 @@ function Search(props){
     }
 
     function handleClick(event){
-        props.onAdd(word);
+        props.onAddDefiniton("https://api.dictionaryapi.dev/api/v2/entries/en/"+word);
+            props.onAddImage("https://pixabay.com/api/?key=11051593-a4e6d6adfc2d65d6b9612b399&q&q="+word+"&")
+            props.onAddPronounce("https://www.dictionaryapi.com/api/v3/references/collegiate/json/"+word+"?key=1f40dde8-50d6-4eb6-9168-6f465c469eb9")
         setWord("");
         event.preventDefault()
     }
