@@ -52,8 +52,8 @@ function Pronunce(props){
     return <div className="definition">
              <h2 className="displayHead">Sound • word</h2>
              <div className="pronounce">
-                <p>{writenP}</p>
-                <p>noun</p>
+                <p>{writenP===undefined?"Search a word":writenP}</p>
+                <p>{writenP===undefined?"":"noun"}</p>
                 <audio className="playbutton" id="embed_player" src={pronounce} autostart="false" controls="true"></audio>
              </div>
            </div>
