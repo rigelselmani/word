@@ -6,27 +6,18 @@ import Image from "./Image";
 import Pronunce from "./Pronounce";
 
 function App(){
-  const [definition,setDefinition]=useState();
-    const [image,setImage]=useState()
-    const [pronouncde,setPronounce]=useState()
+  const [word,setWord]=useState();
     
-  function handleImage(wordImage){
-     setImage(wordImage)
-  }
-  function handleDefinition(wordDefinition){
-     setDefinition(wordDefinition)
-  }
-
-  function handlePronounce(wordPronounce){
-     setPronounce(wordPronounce)
+  function handleWord(word){
+     setWord(word)
   }
     return <div>
                 <Header />
-                <Search onAddDefiniton={handleDefinition} onAddImage={handleImage} onAddPronounce={handlePronounce}/>
+                <Search onAddPronounce={handleWord}/>
                 <div className="App">
-                  <Definition addDefinition={definition}/>
-                  <Image addImage={image}/>
-                  <Pronunce addPronounce={pronouncde}/>
+                  <Definition addWord={word}/>
+                  <Image addWord={word}/>
+                  <Pronunce addWord={word}/>
                 </div>        
             </div>
 }
