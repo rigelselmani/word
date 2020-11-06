@@ -1,43 +1,37 @@
 body{
     background-color: #ecf0f1;
     margin:0;
-    font-family: 'Roboto', sans-serif;
 }
 header{
-    background-color: aliceblue;
-    padding:0;
+    background-color: rgb(1,52,205);
+    padding: 0 0 0 18%;
+    color: white;
+    font-size: 1.4rem;
+    font-family: sans-serif;
     display:flex;
 }
-ul{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    width:13%;
-    font-size: 20px;
-    list-style: none;
-    margin-left: 62%;
-    color:grey;
-}
-.head-img{
-    height:120px;
-    width:400px;
+hr{
+    margin:0;
+    padding:0;
+    color:#1f3c88;
 }
 form{
     background: linear-gradient(to bottom, #0033cc 0%, #99ccff 100%);
-    height:320px;
+    height:300px;
     margin:0 auto;
 }
 input{
     padding:7px;
     background-color: rgb(241, 238, 234);
-    width:500px;
+    width:19.5%;
     padding:10px;
-    margin:0% 0.2% 0.4% 24.5%;
+    margin:0% 0.2% 0.4% 17.9%;
 }
 h3{
     color:white;
     font-size: 3rem;
-    padding:4.5% 0.2% 0% 24.5%;
+    padding:2% 0.2% 1% 17.9%;
+    margin:0;
 }
 .submit-button{
     padding:10px;
@@ -47,35 +41,41 @@ h3{
     border: 1px solid white;
 }
 .definition{
-   margin: 1% 0.66%;
+   margin: 0% 0.28%;
    width:32%;
+   color:#495464;
    height:300px;
    text-align: center;
    float:left;
 }
 .displayHead{
-   background-color: gainsboro;
-   height:50px;
+   color:#495464;
+   font-family: sans-serif;
+   background-color: #bbbfca;
+   height:35px;
    width:100%;
+   margin:10px 1px;
    padding:20px 0px;
 }
 .App{
-    width:80%;
+    width:65%;
     margin:0 auto;
 }
 .pronounce{
    padding:6% 0% 3% 0%;
    height:200px;
    width:100%;
+   font-size: 1.2rem;
    background-color: white;
 }
-.imagedisplay{
-   padding:1% 0% 3% 0%;
+.image-display{
+ 
    height:240px;
    width:100%;
 }
 .define{
    padding:6% 0% 1% 0%;
+   color:#495464;
    background-color: white;
    height:210px;
    width:100%;

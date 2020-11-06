@@ -7,11 +7,13 @@ function Pronunce(props){
   
     useEffect(() =>{
     if(props.addWord===undefined){
+    }else if(props.word===""){
+      return props.word==="retry"
     }else{
     fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${props.addWord}?key=1f40dde8-50d6-4eb6-9168-6f465c469eb9`)
     .then(response=> response.json())
     .then(jsonResponse =>{
-    
+      
     if(jsonResponse==={}||jsonResponse[0]===undefined||jsonResponse[0].hwi===undefined||jsonResponse[0].hwi.prs[0].sound===undefined){
      const writtenPron=""
        // Logic for subdirectory in order to create url

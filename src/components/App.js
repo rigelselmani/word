@@ -13,11 +13,12 @@ function App(){
   }
     return <div>
                 <Header />
+                <hr />
                 <Search onAddPronounce={handleWord}/>
                 <div className="App">
                   <Definition addWord={word}/>
-                  <Image addWord={word}/>
                   <Pronunce addWord={word}/>
+                  <Image addWord={word}/>
                 </div>        
             </div>
 }
